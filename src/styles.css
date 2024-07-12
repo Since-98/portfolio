@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h5 {
+    color: #0056b3;
+}
+
+p {
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nav-link {
+    color: #0056b3 !important;
+}
+
+.nav-link:hover {
+    color: #004494 !important;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+/* Intro Section */
+#intro {
+    padding: 60px 0;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+}
+
+#intro p {
+    font-size: 1.2em;
+}
+
+/* Project Section */
+#projects {
+    padding: 60px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-size: 1.5em;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    #intro h1 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+
+    #projects h2, #contact h2 {
+        font-size: 1.5em;
+    }
+}

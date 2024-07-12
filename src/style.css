@@ -1,0 +1,272 @@
+:root {
+  --background-color: #d7d6d1;
+  --primary-color: #ede6d8;
+  --element-color: #d09374;
+  --accent-color: #647257;
+  --text-color: black;
+  --transition: all 200ms ease-in-out;
+  --box-shadow: 5px 5px 10px #91908f;
+  --border-radius-standard: 8px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+footer,
+.nav-bg-color {
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 40px;
+}
+h3,
+p {
+  text-align: left;
+}
+
+.nav-bg-color {
+  border-radius: var(--border-radius-standard);
+  padding: 10px;
+}
+
+.nav-bg-color,
+.get-in-touch {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+.introduction,
+.skills,
+.projects,
+.carousel,
+.certifications,
+.get-in-touch {
+  border-radius: var(--border-radius-standard);
+  margin: 30px 0;
+  padding: 30px;
+}
+.introduction,
+.skills {
+  background-color: var(--primary-color);
+}
+.certifications {
+  background-color: var(--primary-color);
+  opacity: 90%;
+}
+
+.projects {
+  background: var(--primary-color);
+  color: var(--element-color);
+}
+
+.introduction,
+#img-steffie {
+  border-radius: 100px 100px 5px 5px;
+}
+
+.skills p {
+  text-align: center;
+  line-height: 1.5;
+}
+.get-in-touch {
+  border-radius: 5px 5px 100px 100px;
+}
+
+.introduction-paragraph {
+  position: relative;
+  top: 150px;
+}
+.typer-text {
+  font-size: 50px;
+  line-height: 1.5;
+}
+.carousel {
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  border: 7px double var(--primary-color);
+  padding: 50px 20px 20px 20px;
+  background-color: rgba(208, 147, 116, 0.5);
+}
+
+.carousel-image {
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+  background-color: var(--primary-color);
+  padding: 1px;
+}
+.projects-button,
+.slider-button,
+.certification-button {
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  font-size: 20px;
+}
+.projects-button,
+.certification-button {
+  background: var(--element-color);
+  color: var(--primary-color);
+  border: 1px solid var(--element-color);
+}
+.slider-button {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.projects-button:hover,
+.slider-button:hover,
+.certification-button:hover {
+  background: var(--primary-color);
+  color: var(--element-color);
+  border: 1px solid var(--element-color);
+  transition: var(--transition);
+}
+.slider-button:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+.project-image {
+  height: auto;
+  width: auto;
+  max-width: 450px;
+  max-height: 350px;
+}
+
+.certification-images {
+  width: 220px;
+  background: var(--element-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+.certification-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.email-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.email-link:hover {
+  color: black;
+}
+.skill-icon {
+  color: var(--element-color);
+  font-size: 40px;
+  padding: 20px;
+}
+.socials-icon,
+.footer-icon {
+  font-size: 40px;
+  margin: 20px 30px;
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+.socials-icon {
+  color: var(--accent-color);
+  background: var(--primary-color);
+}
+.footer-icon {
+  color: var(--element-color);
+  background: var(--primary-color);
+}
+.socials-icon:hover {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  transition: var(--transition);
+}
+.footer-icon:hover {
+  color: var(--primary-color);
+  background: var(--element-color);
+}
+
+@media (max-width: 578px) {
+  .introduction-paragraph {
+    position: initial;
+    top: 10px;
+  }
+  .skills,
+  .skill-icon {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+  .certification-images {
+    max-width: 80px;
+  }
+  .project-image {
+    height: auto;
+    width: auto;
+    max-width: 225px;
+    max-height: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction-paragraph {
+    position: relative;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .typer-text {
+    font-size: 20px;
+  }
+  .carousel {
+    width: 80%;
+    height: 80%;
+  }
+  .projects-button,
+  .slider-button {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .skill-icon,
+  .socials-icon,
+  .footer-icon {
+    font-size: 20px;
+    padding: 5px 7px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introduction-paragraph {
+    position: relative;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .typer-text {
+    font-size: 20px;
+  }
+}
